@@ -1,0 +1,9 @@
+{
+  "name": "flipmanager",
+  "private": true,
+  "version": "0.8.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview", "test": "node tests/finance.test.mjs && node tests/validators.test.mjs && node tests/market.test.mjs && node tests/listing.test.mjs && node tests/articles.test.mjs && node tests/sales.test.mjs && node tests/stats.test.mjs && node tests/backup.test.mjs" },
+  "dependencies": { "chart.js": "^4.4.3", "lucide": "^0.451.0" },
+  "devDependencies": { "vite": "^5.4.0" }
+}
