@@ -1,39 +1,38 @@
-# FLIPMANAGER
+<p align="center">
+  <a href="https://www.chartjs.org/" target="_blank">
+    <img src="https://www.chartjs.org/media/logo-title.svg" alt="https://www.chartjs.org/"><br/>
+  </a>
+    Simple yet flexible JavaScript charting for designers & developers
+</p>
 
-Outil de gestion de revente (achat → étude de marché → rentabilité → stock → annonces → ventes → statistiques).
-Application web locale : les données restent dans votre navigateur (IndexedDB). Aucune publication ni lecture automatique de Vinted.
+<p align="center">
+    <a href="https://www.chartjs.org/docs/latest/getting-started/installation.html"><img src="https://img.shields.io/github/release/chartjs/Chart.js.svg?style=flat-square&maxAge=600" alt="Downloads"></a>
+    <a href="https://github.com/chartjs/Chart.js/actions?query=workflow%3ACI+branch%3Amaster"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/chartjs/Chart.js/ci.yml?branch=master&style=flat-square"></a>
+    <a href="https://coveralls.io/github/chartjs/Chart.js?branch=master"><img src="https://img.shields.io/coveralls/chartjs/Chart.js.svg?style=flat-square&maxAge=600" alt="Coverage"></a>
+    <a href="https://github.com/chartjs/awesome"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
+    <a href="https://discord.gg/HxEguTK6av"><img src="https://img.shields.io/badge/discord-chartjs-blue?style=flat-square&maxAge=3600" alt="Discord"></a>
+</p>
 
-## Lancer
+## Documentation
 
-```
-npm install
-npm run dev      # développement
-npm run build    # version de production
-npm test         # 8 suites de tests (calculs, validations, sauvegardes…)
-```
+All the links point to the new version 4 of the lib.
 
-## Modules
+* [Introduction](https://www.chartjs.org/docs/latest/)
+* [Getting Started](https://www.chartjs.org/docs/latest/getting-started/index)
+* [General](https://www.chartjs.org/docs/latest/general/data-structures)
+* [Configuration](https://www.chartjs.org/docs/latest/configuration/index)
+* [Charts](https://www.chartjs.org/docs/latest/charts/line)
+* [Axes](https://www.chartjs.org/docs/latest/axes/index)
+* [Developers](https://www.chartjs.org/docs/latest/developers/index)
+* [Popular Extensions](https://github.com/chartjs/awesome)
+* [Samples](https://www.chartjs.org/samples/)
 
-| Page | Rôle |
-|---|---|
-| Dashboard | Chiffre d'affaires, bénéfices, investissements, stock, graphiques mensuels et par catégorie |
-| Mes articles | Statuts À acheter / En stock / En vente / Vendu / Archivé, photos, coûts détaillés |
-| Calculateur | Bénéfice brut et net, marge, ROI, prix minimum, comparaison de plusieurs prix |
-| Étude de marché | Référence (médiane + moyenne pondérée), 3 stratégies de prix, alertes de sécurité |
-| Mes annonces | Titres, descriptions et mots-clés modifiables avant copie |
-| Mes ventes | Coût figé à la vente, annulations et remboursements |
-| Statistiques | Mois, catégories, marges moyennes, délais de vente |
-| Paramètres | Objectifs, frais, sauvegarde complète (photos incluses), import, CSV |
+In case you are looking for an older version of the docs, you will have to specify the specific version in the url like this: [https://www.chartjs.org/docs/2.9.4/](https://www.chartjs.org/docs/2.9.4/)
 
-## Règles
+## Contributing
 
-- Montants en centimes entiers ; taux en centièmes de pour cent.
-- Aucun frais Vinted n'est supposé : seuls les frais saisis sont appliqués.
-- Seules les ventes terminées comptent dans les chiffres.
-- Les prix recommandés sont des estimations, jamais une garantie de vente.
-- Sauvegardez régulièrement (Paramètres → Exporter une sauvegarde).
+Instructions on building and testing Chart.js can be found in [the documentation](https://www.chartjs.org/docs/master/developers/contributing.html#building-and-testing). Before submitting an issue or a pull request, please take a moment to look over the [contributing guidelines](https://www.chartjs.org/docs/master/developers/contributing) first. For support, please post questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/chart.js) with the `chart.js` tag.
 
-## Organisation
+## License
 
-`src/core` : logique pure et testée (finance, market, articles, sales, stats, backup, listing, validators) et base de données.
-`src/pages` : une page par module. `tests` : un fichier par domaine.
+Chart.js is available under the [MIT license](LICENSE.md).
