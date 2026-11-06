@@ -1,0 +1,17 @@
+/* Jetons de design : seule source des couleurs, rayons et espacements */
+:root {
+  --gold: #F5BD35;
+  --gold-soft: rgba(245, 189, 53, .14);
+  --bg: #141923;
+  --card: #202938;
+  --card-2: #273246;
+  --line: rgba(255, 255, 255, .07);
+  --text: #FFFFFF;
+  --muted: #9AA5B8;
+  --pos: #4ADE80;
+  --neg: #F87171;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px;
+  --sidebar: 248px;
+  --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
